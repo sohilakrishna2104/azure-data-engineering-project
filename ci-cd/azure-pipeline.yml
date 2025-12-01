@@ -1,3 +1,4 @@
+# Added automated check for Terraform files
 trigger:
   branches:
     include:
