@@ -1,3 +1,4 @@
+# Notebook: Silver to Gold aggregation for business-ready data
 # Notebook: Silver to Gold ETL Transformation
 
 # Read cleaned Silver layer data
