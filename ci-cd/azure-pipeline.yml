@@ -1,0 +1,19 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: TerraformInstaller@0
+    displayName: 'Install Terraform'
+
+  - script: |
+      terraform init
+      terraform validate
+    displayName: 'Initialize and validate Terraform code'
+
+  - script: echo "CI/CD pipeline completed successfully"
+    displayName: 'Done'
