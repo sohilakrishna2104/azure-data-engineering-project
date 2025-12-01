@@ -1,7 +1,7 @@
 # Bronze to Silver Transformation
 
 # Read raw sales CSV from Bronze layer
-df = spark.read.csv("/mnt/raw/sales.csv", header=True, inferSchema=True)
+df = spark.read.csv("/mnt/raw/retail_sales_dataset.csv", header=True, inferSchema=True)
 
 # Drop rows with missing values
 df_clean = df.dropna()
